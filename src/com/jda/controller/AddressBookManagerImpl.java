@@ -51,9 +51,9 @@ public class AddressBookManagerImpl implements AddressBookManager {
 
 	}
 
-	public void saveAs() throws JsonGenerationException, JsonMappingException, IOException {
+	public void saveAs(String filename) throws JsonGenerationException, JsonMappingException, IOException {
 		AddressBookImpl addressbookimpl = new AddressBookImpl();
-		addressbookimpl.saveAs();
+		addressbookimpl.saveAs(filename);
 	}
 
 	public void close(String filename) {

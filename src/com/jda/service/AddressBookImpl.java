@@ -26,7 +26,6 @@ public class AddressBookImpl implements AddressBook {
 		Address address = new Address();
 		System.out.println("Enter First Name");
 		person.setFirstName(utility.inputstring());
-		System.out.println(person.getFirstName());
 		System.out.println("Enter Last Name");
 		person.setLastName(utility.inputstring());
 		System.out.println("Enter city");
@@ -169,9 +168,8 @@ public class AddressBookImpl implements AddressBook {
 	}
 
 	public void save(String filename) throws JsonGenerationException, JsonMappingException, IOException {
-
 		mapper.writerWithDefaultPrettyPrinter().writeValue(new File("C:\\Users\\1023404\\eclipse-workspace\\AddressBook\\addressbooks\\"+filename + ".json"), list);
-
+        System.out.println(".....AddressBook Saved....");
 	}
 
 	public void read(String filename) throws JsonParseException, JsonMappingException, IOException {
@@ -186,9 +184,10 @@ public class AddressBookImpl implements AddressBook {
 
 	}
 
-	public void saveAs() throws JsonGenerationException, JsonMappingException, IOException {
+	public void saveAs(String filename) throws JsonGenerationException, JsonMappingException, IOException {
 		System.out.println("Enter the new name");
 		String newname = utility.inputstring();
+		read(filename);
 		save(newname);
 		System.out.println("File renamed");
 

@@ -10,7 +10,7 @@ public interface AddressBookManager {
 
 	public void save(String filename)throws JsonGenerationException, JsonMappingException, IOException;
 
-	public void saveAs()throws JsonGenerationException, JsonMappingException, IOException;
+	public void saveAs(String filename)throws JsonGenerationException, JsonMappingException, IOException;
 
 	public void close(String filename);
 

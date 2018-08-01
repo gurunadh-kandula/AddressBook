@@ -55,6 +55,7 @@ public class AddressBookMain {
 					case 7:
 						System.out.println("AddressBook  " + existingfilename + "  closed");
 						System.out.println("**redirecting to back menu**");
+						System.out.println(".....please save,as some edit has been done....");
 						addressbookimpl.close(existingfilename);
 						select=0;
 
@@ -67,7 +68,7 @@ public class AddressBookMain {
 				addressbookmanagerimpl.save(existingfilename);
 				break;
 			case 4:
-				addressbookmanagerimpl.saveAs();
+				addressbookmanagerimpl.saveAs(existingfilename);
 				break;
 			case 5:
 				System.out.println("Closing address book appliaction");
