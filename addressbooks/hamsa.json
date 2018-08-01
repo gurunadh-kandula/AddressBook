@@ -1,0 +1,19 @@
+[ {
+  "address" : {
+    "city" : "hyderabad",
+    "state" : "telangana",
+    "zip" : 532453
+  },
+  "firstName" : "ram",
+  "phoneNumber" : "7666789097",
+  "lastName" : "charan"
+}, {
+  "address" : {
+    "city" : "kasol",
+    "state" : "himachal",
+    "zip" : 560505
+  },
+  "firstName" : "shri",
+  "phoneNumber" : "8976532133",
+  "lastName" : "ram"
+} ]

@@ -1,0 +1,10 @@
+[ {
+  "address" : {
+    "city" : "allahabad",
+    "state" : "UP",
+    "zip" : 211004
+  },
+  "phoneNumber" : "8976578980",
+  "lastName" : "yadav",
+  "firstName" : "atul"
+} ]

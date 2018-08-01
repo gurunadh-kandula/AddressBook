@@ -1,0 +1,10 @@
+[ {
+  "address" : {
+    "city" : "vizag",
+    "state" : "andhrapradesh",
+    "zip" : 535524
+  },
+  "lastName" : "nadh",
+  "firstName" : "guru",
+  "phoneNumber" : "8309875463"
+} ]
