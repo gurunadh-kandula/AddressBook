@@ -25,8 +25,9 @@ public class AddressBookMain {
 				break;
 			case 2:
 				addressbookmanagerimpl.close(existingfilename);
-				System.out.println("These are the Existing AddressBooks");
+				System.out.println("------These are the Existing AddressBooks------");
 				addressbookmanagerimpl.readExistingAbs();
+				System.out.println();
 				System.out.println("Enter the name of the address book");
 				existingfilename = utility.inputstring();
                 System.out.println("FUNCTIONS WHICH CAN BE PERFORMED ON THE ADDRESS BOOK");
