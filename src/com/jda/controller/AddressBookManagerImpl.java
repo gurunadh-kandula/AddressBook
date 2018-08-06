@@ -17,7 +17,7 @@ public class AddressBookManagerImpl implements AddressBookManager {
 		System.out.println("Please enter the name of the addressbook you want to create");
 		String addressbookname = utility.inputstring();
 
-		File file = new File(addressbookname + ".json");
+		File file = new File("C:\\Users\\1023404\\eclipse-workspace\\AddressBook\\addressbooks\\"+addressbookname + ".json");
 		file.createNewFile();
 		if (file.createNewFile())
 			System.out.println("New addressbook created");

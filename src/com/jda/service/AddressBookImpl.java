@@ -40,11 +40,11 @@ public class AddressBookImpl implements AddressBook {
 		return person;
 	}
 
-	public ArrayList<Person> add(String filename) throws JsonGenerationException, JsonMappingException, IOException {
+	public void add(String filename) throws JsonGenerationException, JsonMappingException, IOException {
+		read(filename);
 		list.add(createUser());
 		save(filename);
-		return list;
-	}
+		}
 
 	static int found = 0;
 

@@ -1,0 +1,10 @@
+[ {
+  "address" : {
+    "city" : "hyderabad",
+    "state" : "telangana",
+    "zip" : 789654
+  },
+  "phoneNumber" : "8907654322",
+  "firstName" : "shravan",
+  "lastName" : "sai"
+} ]
