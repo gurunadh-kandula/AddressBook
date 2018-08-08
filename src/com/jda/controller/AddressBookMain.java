@@ -1,5 +1,6 @@
 package com.jda.controller;
 
+import com.jda.service.AddressBook2;
 import com.jda.service.AddressBookImpl;
 import com.jda.utility.Utility;
 
@@ -9,8 +10,13 @@ public class AddressBookMain {
 		int choice;
 		int select;
 		AddressBookManagerImpl addressbookmanagerimpl = new AddressBookManagerImpl();
+		AddressBook2 addressbook=new AddressBook2();
 		String existingfilename = " ";
-		do {
+		System.out.println("Enter 1.To Json 2.To Database ");
+		int input=utility.inputInteger();
+		if(input==1)
+		{
+			do {
 			AddressBookImpl addressbookimpl = new AddressBookImpl();
 			System.out.println("WELCOME TO ADDRESS BOOK APPLICATION");
 			System.out.println("*********************");
@@ -85,5 +91,35 @@ public class AddressBookMain {
 		} while (choice != 0);
 
 	}
+		else
+		{
+			System.out.println("Welcome to database");
+			System.out.println("1.read the addressbook 2.add a person 3.remove a person 4.edit a person 5.quit");
+			do {
+				choice = utility.inputInteger();
+				switch (choice) {
+				case 1:
+					addressbook.readDataBase();
+					break;
+				case 2:
+					addressbook.add();
+					break;
+				case 3:
+					addressbook.remove();
+					break;
+				case 4:
+					addressbook.edit();
+					break;
+				case 5:
+					choice=0;
+					addressbook.close();
+					break;
+				
+				}
+			}while(choice!=0);
+			
+			
+		}
+		}
 
 }
